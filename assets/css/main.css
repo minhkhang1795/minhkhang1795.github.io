@@ -1623,11 +1623,11 @@
 	}
 
 	body {
-		background-color: #2F80ED;
-		background-image: -moz-linear-gradient(45deg, #56CCF2 15%, #56CCF2 85%);
-		background-image: -webkit-linear-gradient(45deg, #56CCF2 15%, #56CCF2 85%);
-		background-image: -ms-linear-gradient(45deg, #56CCF2 15%, #56CCF2 85%);
-		background-image: linear-gradient(45deg, #56CCF2 15%, #56CCF2 85%);
+		background-color: #0575E6	;
+		/*background-image: -moz-linear-gradient(45deg, #0575E6 15%, #021B79 85%);
+		background-image: -webkit-linear-gradient(45deg, #0575E6 15%, #021B79 85%);
+		background-image: -ms-linear-gradient(45deg, #0575E6 15%, #021B79 85%);
+		background-image: linear-gradient(45deg, #0575E6 15%, #021B79 85%);*/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1644,7 +1644,7 @@
 /* Type */
 
 	body {
-		background-color: #2F80ED;
+		background-color: #0575E6;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -1994,7 +1994,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: rgba(255, 255, 255, 0.75);
 		}
 
 		input[type="submit"]:active,
@@ -2002,7 +2002,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.2);
+			background-color: rgba(255, 255, 255, 0.75);
 		}
 
 		input[type="submit"].icon:before,
@@ -2010,7 +2010,7 @@
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.75);
 		}
 
 		input[type="submit"].special,
@@ -2018,7 +2018,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cc9f0;
+			background-color: #0575E6;
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -2028,7 +2028,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9acff2;
+				background-color: #0082c8;
 			}
 
 			input[type="submit"].special:active,
@@ -2036,7 +2036,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #7ec3ee;
+				background-color: #0575E6;
 			}
 
 			input[type="submit"].special.icon:before,
@@ -2232,8 +2232,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: #0575E6;
+			box-shadow: 0 0 0 1px #0575E6;
 		}
 
 	.select-wrapper:before {
@@ -2260,8 +2260,8 @@
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #8cc9f0;
-		box-shadow: 0 0 0 1px #8cc9f0;
+		border-color: #0575E6;
+		box-shadow: 0 0 0 1px #0575E6;
 	}
 
 	::-webkit-input-placeholder {
@@ -2361,7 +2361,7 @@
 		}
 
 		.icon.style5 {
-			color: #8cc9f0;
+			color: #0575E6;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2929,7 +2929,7 @@
 			}
 
 			.statistics li.style5 {
-				background-color: #8cc9f0;
+				background-color: #0575E6;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3318,7 +3318,8 @@
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #0575E6;
+						color: #ffffff;
 						box-shadow: none;
 					}
 
@@ -3432,7 +3433,7 @@
 			#main input[type="button"].special,
 			#main button.special,
 			#main .button.special {
-				background-color: #8cc9f0;
+				background-color: #0575E6;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
@@ -3479,8 +3480,8 @@
 			#main input[type="email"]:focus,
 			#main select:focus,
 			#main textarea:focus {
-				border-color: #8cc9f0;
-				box-shadow: 0 0 0 1px #8cc9f0;
+				border-color: #0575E6;
+				box-shadow: 0 0 0 1px #0575E6;
 			}
 
 		#main .select-wrapper:before {
@@ -3507,8 +3508,8 @@
 
 		#main input[type="checkbox"]:focus + label:before,
 		#main input[type="radio"]:focus + label:before {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: #0575E6;
+			box-shadow: 0 0 0 1px #0575E6;
 		}
 
 		#main ::-webkit-input-placeholder {
@@ -3562,10 +3563,10 @@
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #0575E6);
+			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #0575E6);
+			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #0575E6);
+			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #0575E6);
 		}
 
 		#main table tbody tr {
