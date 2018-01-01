@@ -18,6 +18,12 @@
 </head>
 
 <body>
+    <!--Back to top -->
+    <a name="top"></a>
+    <a href="#top" class="hoverable btn-float" id="floatingBtn">
+        <i class="fa fa-chevron-up btn-icon-float"></i>
+    </a>
+
     <!--Main Navigation-->
     <header>
 
@@ -37,7 +43,7 @@
                             </a>
                         </li>
                         <li class="nav-item active mr-4">
-                            <a class="nav-link" href="portfolio.html">Portfolio
+                            <a class="nav-link" href="#top">Portfolio
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -54,6 +60,7 @@
     <main class="text-center py-5">
 
         <div class="container">
+
             <!--Section: Blog v.1-->
             <section class="py-4 text-center text-lg-left">
 
@@ -208,19 +215,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Smooth Scrolling -->
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 
-    <script>
-        function myMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(51.5, -0.12),
-                zoom: 10,
-
-            }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 </body>
 
 </html>
