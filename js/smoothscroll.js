@@ -39,7 +39,7 @@ $('a[href*="#"]')
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             document.getElementById("floatingBtn").style.display = "block";
         } else {
             document.getElementById("floatingBtn").style.display = "none";
