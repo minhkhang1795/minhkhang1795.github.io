@@ -76,17 +76,28 @@
                                 <!--Indicators-->
                                 <ol class="carousel-indicators">
                                     <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#video-carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#video-carousel-example" data-slide-to="2"></li>
                                 </ol>
                                 <!--/.Indicators-->
                                 <!--Slides-->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
-                                        <div style="max-height: 50vh; background-color: #fafafa;" align="center">
-                                            <img class="d-block" style="max-height: 70vh; max-width: 100%;"
-                                                 src="../img/post_sudoku_1.jpg"
-                                                 alt="First slide">
-                                        </div>
-
+                                        <img class="d-block w-100"
+                                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(141).jpg"
+                                             alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="video-fluid" autoplay loop>
+                                            <source src="https://mdbootstrap.com/img/video/forest.mp4"
+                                                    type="video/mp4"/>
+                                        </video>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="video-fluid" autoplay loop>
+                                            <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4"
+                                                    type="video/mp4"/>
+                                        </video>
                                     </div>
                                 </div>
                                 <!--/.Slides-->
@@ -108,9 +119,9 @@
                         </div>
                         <!--Post data-->
                         <div class="card-body text-center">
-                            <h2><a class="font-bold">Robotic arm solves Sudoku</a>
-                            </h2>
-                            September - December 2017
+                            <h2>
+                                <a class="font-bold">Robotic arm solves Sudoku</a>
+                            </h2> September - December 2017
 
                         </div>
                         <!--Social shares-->
@@ -120,8 +131,8 @@
                 </div>
 
                 <!--Excerpt-->
-                <div class="section mt-5 px-3">
-                    <p align="justify">This was one of my projects in the Olin's Robotics Lab in the first semester
+                <div class="excerpt mt-5">
+                    <p align="justify">This is one of my first projects in the Olin's Robotics Lab in the first semester
                         of my freshman year. I joined the IRL team in the lab and the goal of the team is to control a
                         robotic arm to interact with humans or to complete a task. I then teamed up with 2 other Oliners
                         to work on the Sudoku project, which was quite challenging but very interesting to me because I
@@ -129,42 +140,20 @@
                     </p>
 
                     <p align="justify">I was responsible for creating an algorithm to solve a Sudoku puzzle, finding a
-                        way to capture a sudoku board including recognizing and locating each digit on the board, and
+                        way to capture a sudoku board including recognizing and locating each digit on the board and
                         actuating the robotic arm.
                     </p>
 
-                    <p align="justify">Check out the project on our
-                        <a target="_blank"
-                           href="https://github.com/olinrobotics/irl/tree/master/dino_arms/projects/sudoku_solver">Github
-                            repo</a>.
+                    <p align="justify">Check out the project on our <a target="_blank"
+                            href="https://github.com/olinrobotics/irl/tree/master/dino_arms/projects/sudoku_solver" >Github
+                        repo</a>.
                     </p>
 
-                    <!-- Sudoku Algorithm -->
                     <h5 align="justify" class="font-weight-bold">Algorithm to solve a Sudoku puzzle</h5>
-                    <p align="justify">
-                        An algorithm to solve a sudoku puzzle was inspired by the paper: <a
-                            href="http://www.ams.org/notices/200904/tx090400460p.pdf" target="_blank">A Pencil-and-Paper
-                        Algorithm for
-                        Solving Sudoku Puzzles</a>.
-                    </p>
-                    <p align="justify">
-                        You can find the algorithm written in Python here: <a
-                            href="https://github.com/olinrobotics/irl/tree/master/dino_arms/projects/sudoku_solver/scripts/sudoku_algorithm"
-                            target="_blank">
-                        Sudoku algorithm</a>.
-                    </p>
 
-                    <!-- Board Processing -->
                     <h5 align="justify" class="font-weight-bold">Capturing the board and processing the digits</h5>
 
-                    <!-- Actuation -->
                     <h5 align="justify" class="font-weight-bold">Actuating the robotic arm</h5>
-
-                    <!-- Other Links -->
-                    <h5 align="justify" class="font-weight-bold">External Links</h5>
-                    <a href="https://github.com/olinrobotics/irl/tree/master/dino_arms/projects/sudoku_solver"
-                       style="color: #000;"
-                       target="_blank"><i class="fa fa-github fa-3x mr-2 float-left"></i></a>
                 </div>
             </div>
             <!--Grid row-->
