@@ -7,8 +7,8 @@ $('a[href*="#"]')
     .click(function (event) {
         // On-page links
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
+            location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+            location.hostname === this.hostname
         ) {
             // Figure out element to scroll to
             var target = $(this.hash);
@@ -29,7 +29,7 @@ $('a[href*="#"]')
                     } else {
                         $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                         $target.focus(); // Set focus again
-                    };
+                    }
                 });
             }
         }
@@ -44,10 +44,4 @@ function scrollFunction() {
     } else {
         document.getElementById("floatingBtn").style.display = "none";
     }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

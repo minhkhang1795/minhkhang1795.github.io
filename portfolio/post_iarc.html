@@ -83,7 +83,7 @@
                                     <div class="carousel-item active">
                                         <div style="max-height: 50vh; background-color: #fafafa;" align="center">
                                             <img class="d-block img-fluid" style="max-height: 70vh; max-width: 100%;"
-                                                 src="../img/post_sudoku_1.jpg"
+                                                 src="../img/post_iarc_1.PNG"
                                                  alt="First slide">
                                             <div class="mask"></div>
                                         </div>
@@ -188,7 +188,7 @@
                     <p align="justify">
                         The picture taken by the robotic arm would be processed using <a
                             href="https://docs.opencv.org/3.3.1/d7/d4d/tutorial_py_thresholding.html" target="_blank">adaptive
-                        thresholding techniques</a> in OpenCV. We then find the contour of the Sudoku board from
+                        thresholding technique</a> in OpenCV. Then, we will find the contour of the Sudoku board from
                         the processed image and apply <a
                             href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html#perspective-transformation"
                             target="_blank">perspective transformation</a> on the contour to get a perfect-square image
@@ -210,7 +210,7 @@
                     </div>
 
                     <p align="justify">
-                        Finally, we crop out each digit and apply <a
+                        Finally, we will crop out each digit and apply <a
                             href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_knn/py_knn_understanding/py_knn_understanding.html#knn-in-opencv"
                             target="_blank">k-NN algorithm in OpenCV</a> to predict the digits.
                     </p>
@@ -225,23 +225,6 @@
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">Final result</p>
-                        </div>
-                    </div>
-
-                    <p align="justify">
-                        Using the Sudoku algorithm above, we'll find a solution for this puzzle.
-                    </p>
-                    <div class="card hoverable d-block mb-3" style="width: fit-content;">
-                        <div class="view" align="center">
-                            <img src="../img/post_sudoku_10.png"
-                                 alt="sudoku result"
-                                 class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="mb-0">A solved Sudoku puzzle</p>
                         </div>
                     </div>
 
