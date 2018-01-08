@@ -118,15 +118,12 @@
                         </div>
                         <!--Post data-->
                         <div class="card-body text-center">
-                            <h2><a class="font-bold">Robotic arm solves Sudoku</a>
-                            </h2>
+                            <h2><a class="font-bold">Robotic arm solves Sudoku</a></h2>
                             September - December 2017
-
                         </div>
-                        <!--Social shares-->
-
+                        <!--Post data-->
                     </div>
-                    <!--Post data-->
+
                 </div>
 
                 <!--Excerpt-->
@@ -146,8 +143,7 @@
                     <p align="justify">Check out the project on our
                         <a target="_blank"
                            href="https://github.com/olinrobotics/irl/tree/master/dino_arms/projects/sudoku_solver"><i
-                                class="fa fa-github"></i> Github
-                            repo</a>.
+                                class="fa fa-github"></i> Github repo</a>.
                     </p>
 
                     <div class="card reverse hoverable d-block mb-3" style="max-width: 560px; ">
@@ -156,7 +152,7 @@
                                     frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="card-body text-center">
-                            <p class="mb-0">Robotic arm solving Sudoku in action</p>
+                            <p class="mb-0">Robotic arm solving Sudoku in action (2x speed)</p>
                         </div>
                     </div>
 
@@ -174,17 +170,31 @@
                             target="_blank">
                         Sudoku algorithm</a>.
                     </p>
+                    <div class="card reverse hoverable d-block mb-3" style="width: fit-content; max-width: 560px;">
+                        <div class="view">
+                            <img src="../img/post_sudoku_6.jpg"
+                                 alt="printing sudoku board"
+                                 class="img-fluid">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="mb-0">A 4x4 sudoku board used in this project (24" x 24")</p>
+                        </div>
+                    </div>
 
                     <!-- Board Processing -->
                     <h3 align="justify" class="font-weight-bold">Capturing the board and processing the digits</h3>
+                    <p align="justify">
+                        The picture taken by the robotic arm would be processed using <a
+                            href="https://docs.opencv.org/3.3.1/d7/d4d/tutorial_py_thresholding.html" target="_blank">adaptive
+                        thresholding techniques</a> in OpenCV.
+                    </p>
                     <div class="card reverse hoverable d-block mb-3" style="width: fit-content; max-width: 560px;">
                         <div class="view">
                             <img src="../img/post_sudoku_7.png"
                                  alt="sudoku picture raw"
                                  class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
+                            <div class="mask"></div>
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">Picture taken from the robotic arm</p>
@@ -192,9 +202,7 @@
                     </div>
 
                     <p align="justify">
-                        The picture taken by the robotic arm would be processed using <a
-                            href="https://docs.opencv.org/3.3.1/d7/d4d/tutorial_py_thresholding.html" target="_blank">adaptive
-                        thresholding techniques</a> in OpenCV. We then find the contour of the Sudoku board from
+                        We then find the contour of the Sudoku board from
                         the processed image and apply <a
                             href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html#perspective-transformation"
                             target="_blank">perspective transformation</a> on the contour to get a perfect-square image
@@ -205,9 +213,7 @@
                             <img src="../img/post_sudoku_9.png"
                                  alt="sudoku picture processed"
                                  class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
+                            <div class="mask"></div>
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">Processed image after adaptive thresholding <br> and perspective
@@ -225,9 +231,7 @@
                             <img src="../img/post_sudoku_8.png"
                                  alt="sudoku result"
                                  class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
+                            <div class="mask"></div>
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">Final result</p>
@@ -242,9 +246,7 @@
                             <img src="../img/post_sudoku_10.png"
                                  alt="sudoku result"
                                  class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
+                            <div class="mask"></div>
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">A solved Sudoku puzzle</p>
@@ -255,18 +257,15 @@
                     <h3 align="justify" class="font-weight-bold">Robotic arm's actuation</h3>
                     <p align="justify">
                         In this project, the arm will firstly move to the center position above the Sudoku board to take
-                        a good picture
-                        of the board. After processing the picture and solving the sudoku puzzle, the arm would then
-                        move to each empty cell and write the solution.
+                        a good picture of the board. After processing the picture and solving the sudoku puzzle, the arm
+                        would then move to each empty cell and write the solution.
                     </p>
                     <div class="card reverse hoverable d-block mb-3" style="width: fit-content; max-width: 560px;">
                         <div class="view">
                             <img src="../img/post_sudoku_5.jpg"
                                  alt="sudoku writing digits"
                                  class="img-fluid">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
+                            <div class="mask"></div>
                         </div>
                         <div class="card-body text-center">
                             <p class="mb-0">The arm is writing digits on the board</p>
