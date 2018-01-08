@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/ico/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
@@ -273,11 +273,16 @@
                 <div class="col-lg-5 col-xl-5 pb-3">
                     <!--Featured image-->
                     <div class="view overlay hm-white-slight rounded z-depth-2">
-                        <img src="img/main_yhack17.jpg"
-                             alt="Third image in the blog listing." class="img-fluid">
-                        <a>
-                            <div class="mask"></div>
-                        </a>
+                        <div style="max-height: 40vh; background-color: #fafafa;">
+                            <video class="video-fluid" autoplay muted loop width="100%" height="100%"
+                                   poster="img/main_yhack17.jpg">
+                                <source src="img/main_yhack17_1.mp4"
+                                        type="video/mp4"/>
+                            </video>
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!--Grid column-->
@@ -291,9 +296,7 @@
                     <h3 class="mb-4 font-bold dark-grey-text">
                         <strong>YHack 2017: Project Underground</strong>
                     </h3>
-                    <p>As students coming from a tiny school with a project-based learning curriculum, we
-                        were inspired by the fact that even in our close community there are many awesome projects going
-                        on that we don't know about. Our web app provides an easy way for everyone to share their
+                    <p>Our web app provides an easy way for everyone to share their
                         projects with other people, a way for college students to inform themselves about what others
                         are doing and what kinds of things they could try in the future.</p>
                     <p class="font-italic">December 2017</p>
