@@ -9,7 +9,7 @@
 	color: #fff;
 	border-radius:50px;
 	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: 2px 2px 3px rgba(113, 113, 113, 0.42);
 	display: none;
 	z-index: 100;
 }
