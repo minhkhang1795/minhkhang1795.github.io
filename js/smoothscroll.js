@@ -5,6 +5,10 @@ $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
     .not('[href="#carousel"]')
+    .not('[href="#collapseAccordion1"]')
+    .not('[href="#collapseAccordion2"]')
+    .not('[href="#collapseAccordion3"]')
+    .not('[href="#collapseAccordion4"]')
     .click(function (event) {
         // On-page links
         if (
