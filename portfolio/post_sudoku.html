@@ -148,15 +148,15 @@
                 <!--Excerpt-->
                 <div class="section mt-5 px-3">
                     <p align="justify">This was one of my projects in the Olin's Robotics Lab in the first semester
-                        of my freshman year. I joined the IRL team in the lab and the goal of the team is to control a
-                        robotic arm to interact with humans or to complete a task. I then teamed up with two other
-                        Oliners to work on the Sudoku project, which was quite challenging but very interesting to me
-                        because I love solving puzzles.
+                        of my freshman year. I joined the Interactive Robotics Laboratory subteam whose goal is
+                        to control robotic arms to interact with humans or to complete a task. I then teamed up with
+                        two other Oliners to work on the Sudoku project, which was quite challenging but very
+                        interesting to me because I love solving puzzles.
                     </p>
 
-                    <p align="justify">I was responsible for creating an algorithm to solve a Sudoku puzzle, finding a
-                        way to capture a Sudoku board including recognizing and locating the digits on the board, and
-                        actuating the robotic arm.
+                    <p align="justify">I was responsible for creating an algorithm to solve a Sudoku puzzle and finding
+                        a method to capture a Sudoku board including locating and recognizing digits using k-NN
+                        algorithm.
                     </p>
 
                     <p align="justify">Check out the project on our
@@ -189,7 +189,8 @@
                     <h3 align="justify" class="font-weight-bold">Algorithm to solve a Sudoku puzzle</h3>
                     <p align="justify">
                         An algorithm to solve a sudoku puzzle was inspired by the paper: <a
-                            href="http://www.ams.org/notices/200904/tx090400460p.pdf" target="_blank" rel="noopener">A Pencil-and-Paper
+                            href="http://www.ams.org/notices/200904/tx090400460p.pdf" target="_blank" rel="noopener">A
+                        Pencil-and-Paper
                         Algorithm for
                         Solving Sudoku Puzzles</a>.
                     </p>
@@ -213,10 +214,11 @@
                     <h3 align="justify" class="font-weight-bold">Capturing the board and processing the digits</h3>
                     <p align="justify">
                         The picture taken by the robotic arm would be processed using <a
-                            href="https://docs.opencv.org/3.3.1/d7/d4d/tutorial_py_thresholding.html" target="_blank" rel="noopener">adaptive
+                            href="https://docs.opencv.org/3.3.1/d7/d4d/tutorial_py_thresholding.html" target="_blank"
+                            rel="noopener">adaptive
                         thresholding techniques</a> in OpenCV.
                     </p>
-                    <div class="card reverse hoverable d-block mb-3 half-screen-img" >
+                    <div class="card reverse hoverable d-block mb-3 half-screen-img">
                         <div class="view">
                             <img src="../img/post_sudoku_7.jpg" alt="Sudoku raw picture" class="img-fluid">
                             <div class="mask"></div>
@@ -230,10 +232,11 @@
                         We then find the contour of the Sudoku board from
                         the processed image and apply <a
                             href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html#perspective-transformation"
-                            target="_blank" rel="noopener">perspective transformation</a> on the contour to get a perfect-square image
+                            target="_blank" rel="noopener">perspective transformation</a> on the contour to get a
+                        perfect-square image
                         of the Sudoku grid.
                     </p>
-                    <div class="card hoverable d-block mb-3 half-screen-img" >
+                    <div class="card hoverable d-block mb-3 half-screen-img">
                         <div class="view" align="center">
                             <img src="../img/post_sudoku_9.jpg" alt="Sudoku picture processed" class="img-fluid">
                             <div class="mask"></div>
@@ -249,7 +252,7 @@
                             href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_knn/py_knn_understanding/py_knn_understanding.html#knn-in-opencv"
                             target="_blank" rel="noopener">k-NN algorithm in OpenCV</a> to predict the digits.
                     </p>
-                    <div class="card hoverable d-block mb-3 half-screen-img" >
+                    <div class="card hoverable d-block mb-3 half-screen-img">
                         <div class="view" align="center">
                             <img src="../img/post_sudoku_8.jpg" alt="Sudoku result" class="img-fluid">
                             <div class="mask"></div>
@@ -262,7 +265,7 @@
                     <p align="justify">
                         Using the Sudoku algorithm above, we'll find a solution for this puzzle.
                     </p>
-                    <div class="card hoverable d-block mb-3 half-screen-img" >
+                    <div class="card hoverable d-block mb-3 half-screen-img">
                         <div class="view" align="center">
                             <img src="../img/post_sudoku_10.jpg" alt="A solved Sudoku puzzle" class="img-fluid">
                             <div class="mask"></div>
@@ -273,13 +276,13 @@
                     </div>
 
                     <!-- Actuation -->
-                    <h3 align="justify" class="font-weight-bold">Robotic arm's actuation</h3>
+                    <h3 align="justify" class="font-weight-bold">Actuation of the Robotic Arm</h3>
                     <p align="justify">
-                        In this project, the arm will firstly move to the center position above the Sudoku board to take
+                        In this project, the arm will move to the center position above the Sudoku board to take
                         a good picture of the board. After processing the picture and solving the Sudoku puzzle, the arm
                         would then move to each empty cell and write the solution.
                     </p>
-                    <div class="card reverse hoverable d-block mb-3 half-screen-img" >
+                    <div class="card reverse hoverable d-block mb-3 half-screen-img">
                         <div class="view">
                             <img src="../img/post_sudoku_5.jpg" alt="The arm writing digits" class="img-fluid">
                             <div class="mask"></div>
@@ -289,7 +292,7 @@
                         </div>
                     </div>
 
-                    <div class="card reverse hoverable d-block mb-3 half-screen-img" >
+                    <div class="card reverse hoverable d-block mb-3 half-screen-img">
                         <div class="view">
                             <img src="../img/post_sudoku_11.jpg" alt="The arm solved the puzzle" class="img-fluid">
                             <div class="mask"></div>
