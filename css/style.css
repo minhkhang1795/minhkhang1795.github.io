@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .btn-float {
     position: fixed;
     width: 60px;
