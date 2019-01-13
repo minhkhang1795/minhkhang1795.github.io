@@ -91,3 +91,7 @@
     width: fit-content;
     max-width: 560px;
 }
+
+.view img, .view video {
+    display: inline-block;
+}
