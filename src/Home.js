@@ -9,12 +9,6 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-        {/* Back to top */}
-        <div id="top"/>
-        <Link className="hoverable btn-float" href="/" id="floatingBtn" to="top" smooth={true} duration={500}>
-          <i className="fa fa-chevron-up btn-icon-float"/>
-        </Link>
-
         {/* Main Navigation */}
         <header>
           <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -42,7 +36,7 @@ class Home extends Component {
               </div>
             </div>
           </nav>
-          <div className="view intro hm-purple-light">
+          <div className="view intro hm-purple-light" id="background">
             <div className="full-bg-img flex-center">
               <div className="container text-center white-text wow fadeInUp">
                 <div className="row pt-5 mt-3">
