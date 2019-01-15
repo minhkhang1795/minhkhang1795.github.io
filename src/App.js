@@ -4,6 +4,8 @@ import {Link} from "react-scroll/modules";
 import AboutPage from "./AboutPage"
 import PortfolioPage from "./PortfolioPage"
 import SudokuPage from "./SudokuPage"
+import SetgamePage from "./SetgamePage"
+import IARCPage from "./IARCPage"
 import ScrollToTop from "./ScrollToTop";
 
 
@@ -19,7 +21,9 @@ const AppRouter = () => (
 
         <Route path="/" exact component={AboutPage}/>
         <Route path="/portfolio/" exact component={PortfolioPage}/>
-        <Route path="/portfolio/sudoku" component={SudokuPage}/>
+        <Route path="/portfolio/sudoku/" component={SudokuPage}/>
+        <Route path="/portfolio/setgame/" component={SetgamePage}/>
+        <Route path="/portfolio/iarc/" component={IARCPage}/>
 
         {/* Copyright */}
         <hr className="mb-4"/>
