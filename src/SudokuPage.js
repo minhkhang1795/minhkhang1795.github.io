@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {Link as Link2} from "react-router-dom";
 
-class Sudoku extends Component {
+class SudokuPage extends Component {
 
   render() {
     return (
@@ -290,4 +290,4 @@ class Sudoku extends Component {
   }
 }
 
-export default Sudoku;
+export default SudokuPage;

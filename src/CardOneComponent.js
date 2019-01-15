@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {Link as Link2} from "react-router-dom";
 
-class CardType1 extends Component {
+class CardOneComponent extends Component {
 
   static renderCardBody(post) {
     return (
@@ -63,9 +63,9 @@ class CardType1 extends Component {
     return (
       <div>
         <div className="row">
-          {index % 2 !== 0 && CardType1.renderCardImage(post)}
-          {CardType1.renderCardBody(post)}
-          {index % 2 === 0 && CardType1.renderCardImage(post)}
+          {index % 2 !== 0 && CardOneComponent.renderCardImage(post)}
+          {CardOneComponent.renderCardBody(post)}
+          {index % 2 === 0 && CardOneComponent.renderCardImage(post)}
         </div>
         {!isLast &&
         <hr className="mb-5 mt-5 pb-3"/>
@@ -76,4 +76,4 @@ class CardType1 extends Component {
 
 }
 
-export default CardType1
+export default CardOneComponent

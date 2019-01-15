@@ -4,7 +4,7 @@ import {Link} from "react-scroll";
 import {Link as Link2} from "react-router-dom";
 import MyMapComponent from "./MapComponent";
 
-class Home extends Component {
+class AboutPage extends Component {
 
   render() {
     return (
@@ -382,4 +382,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default AboutPage;

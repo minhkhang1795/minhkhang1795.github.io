@@ -3,9 +3,9 @@ import './App.css';
 import {Link} from "react-scroll";
 import {Link as Link2} from "react-router-dom";
 import * as DBHelper from "./DBHelper";
-import CardType1 from "./CardType1";
+import CardOneComponent from "./CardOneComponent";
 
-class Portfolio extends Component {
+class PortfolioPage extends Component {
 
   state = {
     posts: [],
@@ -16,13 +16,18 @@ class Portfolio extends Component {
   }
 
   fetchPosts() {
-    DBHelper.getAll().then((posts) => {
-      if (posts) {
-        posts.sort((a, b) => new Date(a.startTime) < new Date(b.startTime) ? 1 : -1);
-        this.setState({posts: posts});
-      }
-    }).catch((e) => {
-    })
+    if (sessionStorage.getItem('posts') && sessionStorage.getItem('posts').length > 0) {
+      this.setState({posts: JSON.parse(sessionStorage.getItem('posts'))});
+    } else {
+      DBHelper.getAll().then((posts) => {
+        if (posts) {
+          posts.sort((a, b) => new Date(a.startTime) < new Date(b.startTime) ? 1 : -1);
+          sessionStorage.setItem('posts', JSON.stringify(posts));
+          this.setState({posts: posts});
+        }
+      }).catch((e) => {
+      })
+    }
   }
 
   render() {
@@ -76,7 +81,7 @@ class Portfolio extends Component {
                 including robotics, software, simulation and artificial intelligence.</p>
 
               {posts && posts.constructor === Array && posts.map((post, index) =>
-                <CardType1 key={index} post={post} index={index} isLast={index + 1 === posts.length}/>
+                <CardOneComponent key={index} post={post} index={index} isLast={index + 1 === posts.length}/>
               )}
 
             </section>
@@ -90,4 +95,4 @@ class Portfolio extends Component {
   }
 }
 
-export default Portfolio;
+export default PortfolioPage;
