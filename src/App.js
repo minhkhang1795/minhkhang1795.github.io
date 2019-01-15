@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 
 
 const AppRouter = () => (
-  <Router onUpdate={() => console.log("update")}>
+  <Router>
     <ScrollToTop>
       <div>
         {/* Back to top */}
