@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Link} from "react-scroll";
 import {Link as Link2} from "react-router-dom";
 
 class Sudoku extends Component {
@@ -182,7 +181,7 @@ class Sudoku extends Component {
                   </p>
                   <div className="card reverse hoverable d-block mb-3 half-screen-img">
                     <div className="view">
-                      <img src={process.env.PUBLIC_URL + "/img/post_sudoku_7.jpg"} alt="Sudoku raw picture" className="img-fluid"/>
+                      <img src={process.env.PUBLIC_URL + "/img/post_sudoku_7.jpg"} alt="Sudoku raw" className="img-fluid"/>
                         <div className="mask"/>
                     </div>
                     <div className="card-body text-center">
