@@ -95,3 +95,7 @@
 .view img, .view video {
     display: inline-block;
 }
+
+.fa-1x {
+    font-size: 1.5em;
+}
