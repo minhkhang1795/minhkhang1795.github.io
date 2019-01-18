@@ -21,10 +21,10 @@ class CardOneComponent extends Component {
         <p className="font-italic">{post.timeRange}</p>
 
         {post.linkExternal ?
-          <a className="btn btn-indigo btn-md mb-3 ml-0"
+          <a className="btn my-btn-indigo btn-md mb-3 ml-0"
              href={post.linkUrl} rel="noopener noreferrer"
              target="_blank">{post.btnText}</a> :
-          <Link2 className="btn btn-indigo btn-md mb-3 ml-0"
+          <Link2 className="btn my-btn-indigo btn-md mb-3 ml-0"
                  to={post.linkUrl}>{post.btnText}</Link2>}
       </div>)
   }

@@ -46,10 +46,10 @@ class AboutPage extends Component {
                           data-wow-offset="-500"
                           data-wow-delay="0.3s">
                         MINH-KHANG
-                        <a className="indigo-text font-bold"> VU</a>
+                        <a className="my-indigo-text font-bold"> VU</a>
                       </h3>
 
-                      <Link className="btn btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.8s"
+                      <Link className="btn my-btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.8s"
                             data-wow-offset="-500" href="about"
                             to="about" smooth={true} duration={500}>About
                         me</Link>
@@ -94,7 +94,7 @@ class AboutPage extends Component {
             {/* Section: Interests */}
             <section className="text-center">
 
-              <h1 className="py-5 font-bold" style={{color: "#3949ab"}}>
+              <h1 className="py-5 font-bold" style={{color: "#0D47A1"}}>
                 <strong>Interests</strong>
               </h1>
 
@@ -103,7 +103,7 @@ class AboutPage extends Component {
                 <div className="col-md-4 pb-4 pt-4 hoverable wow zoomIn" data-wow-delay="0.2s"
                      data-wow-duration="0.4s">
                   <i className="fa fa-code-fork fa-4x green-text"/>
-                  <h5 className="font-bold mt-4 mb-4 indigo-text">Software</h5>
+                  <h5 className="font-bold mt-4 mb-4 my-indigo-text">Software</h5>
                   <p style={{color: "#616161"}}>I've built native Android and iOS apps over the last two years. I also
                     gained
                     some experience in developing web applications using Django in the Yale Hackathon 2017.
@@ -116,7 +116,7 @@ class AboutPage extends Component {
                 <div className="col-md-4 pb-4 pt-4 hoverable wow zoomIn" data-wow-delay="0.2s"
                      data-wow-duration="0.4s">
                   <i className="fa fa-cogs fa-4x pink-text"/>
-                  <h5 className="font-bold mt-4 mb-4 indigo-text">Robotics</h5>
+                  <h5 className="font-bold mt-4 mb-4 my-indigo-text">Robotics</h5>
                   <p style={{color: "#616161"}}>I've just got involved in Robotics recently when I got to Olin. I'm
                     very
                     interested in this field because I can find many applications that can be used in real
@@ -132,7 +132,7 @@ class AboutPage extends Component {
                 <div className="col-md-4 pb-4 pt-4 hoverable wow zoomIn" data-wow-delay="0.2s"
                      data-wow-duration="0.4s">
                   <i className="fa fa-connectdevelop fa-4x orange-text"/>
-                  <h5 className="font-bold mt-4 mb-4 indigo-text">Machine Learning</h5>
+                  <h5 className="font-bold mt-4 mb-4 my-indigo-text">Machine Learning</h5>
                   <p style={{color: "#616161"}}>I got introduced to Machine Learning through an online course taught
                     by Andrew Ng. By challenging myself to complete his course with a certificate, I became
                     interested in this field. The knowledge from the course has helped me a lot in understanding
@@ -148,7 +148,7 @@ class AboutPage extends Component {
             {/* Section: Honors */}
             <section className="text-center">
 
-              <h1 className="py-5 font-bold" style={{color: "#3949ab"}}>
+              <h1 className="py-5 font-bold" style={{color: "#0D47A1"}}>
                 <strong>Certificates & Honors</strong>
               </h1>
 
@@ -157,7 +157,7 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold indigo-text" style={{textAlign: "left"}}>Front-End Web Developer
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>Front-End Web Developer
                         Certificate</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2018 - Grow with Google Scholarship:
                         Udacity Front-End Web Developer Nanodegree</p>
@@ -202,7 +202,7 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold indigo-text" style={{textAlign: "left"}}>Machine Learning
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>Machine Learning
                         Certificate</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2016 - Course by Stanford University on
                         Coursera</p>
@@ -231,7 +231,7 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold indigo-text" style={{textAlign: "left"}}>CoderSchool Second Prize
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Second Prize
                         for Group
                         Project</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2016 - Android for Engineers course</p>
@@ -259,7 +259,7 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold indigo-text" style={{textAlign: "left"}}>CoderSchool Grand Prize
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Grand Prize
                         for Best
                         Group Project</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2015 - iOS (Swift) for Engineers course</p>
@@ -297,7 +297,7 @@ class AboutPage extends Component {
                       </div>
 
                       <div className="col-lg-4"
-                           style={{backgroundColor: "#0d47a1"}}>
+                           style={{backgroundColor: "#0D47A1"}}>
 
                         <div className="container text-center" style={{color: "#ffffff"}}>
                           <div className="pt-5 pb-4">
