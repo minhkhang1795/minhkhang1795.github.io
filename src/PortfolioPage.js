@@ -4,11 +4,13 @@ import {Link} from "react-scroll";
 import {Link as Link2} from "react-router-dom";
 import * as DBHelper from "./DBHelper";
 import CardOneComponent from "./CardOneComponent";
+import CardTwoComponent from "./CardTwoComponent";
 
 class PortfolioPage extends Component {
 
   state = {
     posts: [],
+    layoutMode: 'masonry!'
   };
 
   componentDidMount() {
@@ -31,7 +33,7 @@ class PortfolioPage extends Component {
   }
 
   render() {
-    let {posts} = this.state;
+    let {posts, layoutMode} = this.state;
 
     return (
       <div className="App">
@@ -80,9 +82,18 @@ class PortfolioPage extends Component {
               <p className="text-center mb-5 pb-3">The projects below belong to many different categories
                 including robotics, software, simulation and artificial intelligence.</p>
 
-              {posts && posts.constructor === Array && posts.map((post, index) =>
+              {layoutMode !== 'masonry' &&
+              posts && posts.constructor === Array && posts.map((post, index) =>
                 <CardOneComponent key={index} post={post} index={index} isLast={index + 1 === posts.length}/>
               )}
+
+              {layoutMode === 'masonry' &&
+              <div className="card-columns">
+                {posts && posts.constructor === Array && posts.map((post, index) =>
+                  <CardTwoComponent key={index} post={post} index={index} isLast={index + 1 === posts.length}/>
+                )}
+              </div>
+              }
 
             </section>
 

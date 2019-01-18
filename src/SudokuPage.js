@@ -48,9 +48,9 @@ class SudokuPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   {/* Featured image */}
-                  <div className="card hoverable wider reverse">
+                  <div className="card hoverable wider reverse card-cascade">
 
-                    <div className="view">
+                    <div className="view view-cascade">
                       {/* Carousel Wrapper */}
                       <div id="carousel" className="carousel slide carousel-fade" data-interval="2500"
                            data-wrap="false" data-ride="carousel">
@@ -64,14 +64,14 @@ class SudokuPage extends Component {
                         {/* Slides */}
                         <div className="carousel-inner" role="listbox">
                           <div className="carousel-item active">
-                            <div style={{maxHeight: "50vh", backgroundColor: "#fafafa"}} align="center">
-                              <img className="d-block img-fluid" style={{maxHeight: "75vh", maxWidth: "100%"}}
+                            <div style={{maxHeight: "50vh", backgroundColor: "transparent"}} align="center">
+                              <img className="d-block img-fluid"
                                    src={process.env.PUBLIC_URL + "/img/post_sudoku_1.jpg"} alt="Sudoku team members"/>
                                 <div className="mask"/>
                             </div>
                           </div>
                           <div className="carousel-item">
-                            <div style={{maxHeight: "50vh", backgroundColor: "#fafafa"}} align="center">
+                            <div style={{maxHeight: "50vh", backgroundColor: "transparent"}} align="center">
                               <video className="video-fluid" autoPlay muted loop>
                                 <source src={process.env.PUBLIC_URL + "/img/post_sudoku_video.mp4"} type="video/mp4"/>
                               </video>
@@ -98,7 +98,7 @@ class SudokuPage extends Component {
 
                     </div>
                     {/* Post data */}
-                    <div className="card-body text-center">
+                    <div className="card-body text-center card-body-cascade">
                       <h2><a className="font-bold">Robotic Arm Solves Sudoku</a></h2>
                       September - December 2017
                     </div>

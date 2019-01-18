@@ -48,9 +48,9 @@ class SetgamePage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   {/* Featured image */}
-                  <div className="card hoverable wider reverse">
+                  <div className="card hoverable wider reverse card-cascade">
 
-                    <div className="view">
+                    <div className="view view-cascade">
                       <div id="carousel" className="carousel slide carousel-fade" data-ride="carousel">
                         <ol className="carousel-indicators">
                           {/*<li data-target="#carousel" data-slide-to="0" class="active"></li>*/}
@@ -58,8 +58,8 @@ class SetgamePage extends Component {
                         </ol>
                         <div className="carousel-inner" role="listbox">
                           <div className="carousel-item active">
-                            <div style={{maxHeight: "50vh", backgroundColor: "#fafafa"}} align="center">
-                              <img className="d-block img-fluid" style={{maxHeight: "80vh", maxWidth: "100%"}}
+                            <div style={{maxHeight: "50vh", backgroundColor: "transparent"}} align="center">
+                              <img className="d-block img-fluid"
                                    alt="Set team members"
                                    src={process.env.PUBLIC_URL + "/img/post_set_2.jpg"}/>
                                 <div className="mask"/>
@@ -79,7 +79,7 @@ class SetgamePage extends Component {
                       </div>
 
                     </div>
-                    <div className="card-body text-center">
+                    <div className="card-body text-center card-body-cascade">
                       <h2><a className="font-bold">Robotic Arm Plays the Card Game Set</a></h2>
                       September - December 2017
                     </div>

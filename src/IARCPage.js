@@ -45,9 +45,9 @@ class IARCPage extends Component {
 
               <div className="row">
                 <div className="col-md-12">
-                  <div className="card hoverable wider reverse">
+                  <div className="card hoverable wider reverse card-cascade">
 
-                    <div className="view">
+                    <div className="view view-cascade">
                       <div id="carousel" className="carousel slide carousel-fade" data-interval="2500"
                            data-wrap="false" data-ride="carousel">
                         <ol className="carousel-indicators">
@@ -56,15 +56,15 @@ class IARCPage extends Component {
                         </ol>
                         <div className="carousel-inner" role="listbox">
                           <div className="carousel-item active">
-                            <div style={{maxHeight: "70vh", backgroundColor: "#fafafa"}} align="center">
-                              <img className="d-block img-fluid" style={{maxHeight: "70vh", maxWidth: "100%"}}
+                            <div style={{maxHeight: "65vh", backgroundColor: "transparent"}} align="center">
+                              <img className="d-block img-fluid"
                                    alt="Drone and roomba image"
                                    src={process.env.PUBLIC_URL + "/img/post_iarc_1.jpg"}/>
                                 <div className="mask"/>
                             </div>
                           </div>
                           <div className="carousel-item">
-                            <div style={{maxHeight: "70vh", backgroundColor: "#fafafa"}} align="center">
+                            <div style={{maxHeight: "65vh", backgroundColor: "transparent"}} align="center">
                               <video className="video-fluid" autoPlay muted loop>
                                 <source src={process.env.PUBLIC_URL + "/img/post_iarc_video.mp4"}
                                         type="video/mp4"/>
@@ -86,7 +86,7 @@ class IARCPage extends Component {
                       </div>
 
                     </div>
-                    <div className="card-body text-center">
+                    <div className="card-body text-center card-body-cascade">
                       <h2><a className="font-bold">PID Controller for Drone to Track a Target</a></h2>
                       September - December 2017
                     </div>
