@@ -9,7 +9,7 @@ class SetgamePage extends Component {
       <div className="App">
         {/* Main Navigation */}
         <header>
-          <nav className="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
+          <nav className="navbar navbar-expand-lg navbar-dark my-indigo fixed-top scrolling-navbar">
             <div className="container">
               <Link2 className="navbar-brand" to="/">
                 <strong>Minh-Khang Vu</strong>

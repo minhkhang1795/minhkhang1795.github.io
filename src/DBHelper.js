@@ -7,4 +7,3 @@ const headers = {
 export const getAll = () =>
   fetch(`/posts.json`, { headers })
     .then(res => res.json())
-    .then(data => data.posts);

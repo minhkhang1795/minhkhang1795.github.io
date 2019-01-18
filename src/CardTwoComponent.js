@@ -8,8 +8,8 @@ class CardTwoComponent extends Component {
     const {post, index, isLast} = this.props;
     if (post)
       return (
-        <div className="sortable">
-          <div className="card card-cascade narrower mb-4 hoverable">
+        <div className="sortable pb-2">
+          <div className="card card-cascade narrower hoverable text-center">
 
             {/* Card image */}
             <div className="view view-cascade overlay">

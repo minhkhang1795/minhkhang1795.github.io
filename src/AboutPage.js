@@ -6,6 +6,28 @@ import MyMapComponent from "./MapComponent";
 
 class AboutPage extends Component {
 
+  initFunctions() {
+    new global.WOW().init();
+    // Listener bound to `.stop-propagation`, no delegation
+    global.$('.stop-propagation').on('click', function (e) {
+      e.stopPropagation();
+    });
+
+    const accordionSections = global.$(".collapse-section");
+    const accordionIcons = global.$(".accordionIcon");
+    for (let i = 0; i < accordionSections.length; i++) {
+      console.log("here");
+      accordionSections[i].addEventListener('click', function () {
+        accordionIcons[i].getElementsByClassName("plus")[0].classList.toggle("plus-inactive");
+        accordionIcons[i].getElementsByClassName("minus")[0].classList.toggle("minus-inactive");
+      });
+    }
+  }
+
+  componentDidMount() {
+    this.initFunctions();
+  }
+
   render() {
     return (
       <div className="App">

@@ -10,36 +10,125 @@ class PortfolioPage extends Component {
 
   state = {
     posts: [],
-    layoutMode: 'masonry!'
+    categories: [],
+    layoutMode: 'masonry',
+    controlToggled: false
   };
 
   componentDidMount() {
     this.fetchPosts();
   }
 
+  handleBadgeClicked(code) {
+    let categories = this.state.categories;
+
+    // Deactivate the category with the corresponding code
+    for (let cat of categories) {
+      if (cat.code === code) {
+        // If it's the last one, don't deactivate (do nothing)
+        let activeCats = categories.filter((cat) => !cat.inactive);
+        if (!cat.inactive && (!activeCats || activeCats.length === 1))
+          return;
+
+        cat.inactive = cat.inactive ? !cat.inactive : "white";
+        break;
+      }
+    }
+
+    this.setState({categories: categories});
+  }
+
+  handleMasonryView(gridType) {
+    this.setState({layoutMode: gridType});
+  }
+
+  filterByCategories(activeCats) {
+    let posts = this.state.posts;
+    let filteredPosts = [];
+    for (let post of posts) {
+      loopBreak:
+        for (let cat of activeCats) {
+          for (let postCat of post.categories) {
+            if (postCat.code === cat.code) {
+              filteredPosts.push(post);
+              break loopBreak;
+            }
+          }
+        }
+    }
+
+    return filteredPosts;
+  }
+
   fetchPosts() {
-    if (sessionStorage.getItem('posts') && sessionStorage.getItem('posts').length > 0) {
-      this.setState({posts: JSON.parse(sessionStorage.getItem('posts'))});
+    if (sessionStorage.getItem('data') && sessionStorage.getItem('data').length > 0) {
+      let data = JSON.parse(sessionStorage.getItem('data'));
+      this.setState({posts: data.posts, categories: data.categories});
     } else {
-      DBHelper.getAll().then((posts) => {
-        if (posts) {
-          posts.sort((a, b) => new Date(a.startTime) < new Date(b.startTime) ? 1 : -1);
-          sessionStorage.setItem('posts', JSON.stringify(posts));
-          this.setState({posts: posts});
+      DBHelper.getAll().then((data) => {
+        if (data) {
+          sessionStorage.setItem('data', JSON.stringify(data));
+          data.posts.sort((a, b) => new Date(a.startTime) < new Date(b.startTime) ? 1 : -1);
+          this.setState({posts: data.posts, categories: data.categories});
         }
       }).catch((e) => {
+
       })
     }
   }
 
+  toggleControl() {
+    this.setState({controlToggled: !this.state.controlToggled})
+  }
+
   render() {
-    let {posts, layoutMode} = this.state;
+    let {posts, categories, layoutMode, controlToggled} = this.state;
+    let activeCats = categories.filter((cat) => !cat.inactive);
+    posts = this.filterByCategories(activeCats);
 
     return (
       <div className="App">
+
+        {/* Left Control */}
+        {categories && categories.constructor === Array &&
+        <div className={"sticky " + (controlToggled ? "show" : "hide")}>
+          <div className="card">
+            <div className="control-main" style={{width: "90%"}}>
+              <p className="text-right mb-0">
+                <i
+                  className={"fa fa-th-list fa-1x mr-2 " + (layoutMode === '!masonry' ? "my-indigo-text" : "text-muted")}
+                  onClick={() => this.handleMasonryView('!masonry')}/>
+                <i className={"fa fa-th fa-1x " + (layoutMode === 'masonry' ? "my-indigo-text" : "text-muted")}
+                   onClick={() => this.handleMasonryView('masonry')}/>
+              </p>
+              <hr className="mb-2 mt-2"/>
+              <h5>Categories <span
+                className="text-muted h6">({posts.length} {posts.length === 1 ? " project" : " projects"})</span></h5>
+              <div className="card-cascade">
+                {categories && categories.constructor === Array && categories.map((cat) =>
+                    <a key={cat.code} onClick={() => this.handleBadgeClicked(cat.code)}>
+                <span
+                  className={"badge " + (cat.inactive ? "white text-dark" : cat.color) + " mb-3 mr-1 font-weight-normal"}>
+                  #{cat.code}
+                </span>
+                    </a>
+                )}
+              </div>
+            </div>
+
+            <div className="control-close" style={{width: "10%", height: "100%", right: 0, position: "absolute", cursor: "pointer"}}
+                 onClick={() => this.toggleControl()}>
+              <i style={{top: "45%", position: "absolute"}}
+                 className={"fa ml-2 my-indigo-text " + (controlToggled ? "fa-times" : "fa-chevron-right")}
+              />
+            </div>
+          </div>
+        </div>
+        }
+
         {/* Main Navigation */}
         <header>
-          <nav className="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
+          <nav className="navbar navbar-expand-lg navbar-dark my-indigo fixed-top scrolling-navbar">
             <div className="container">
               <Link2 className="navbar-brand" to="/">
                 <strong>Minh-Khang Vu</strong>
