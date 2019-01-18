@@ -356,6 +356,10 @@
       "color": "orange"
     },
     {
+      "code": "game",
+      "color": "red"
+    },
+    {
       "code": "software",
       "color": "green"
     },
@@ -366,10 +370,6 @@
     {
       "code": "electrical",
       "color": "blue"
-    },
-    {
-      "code": "game",
-      "color": "red"
     }
   ]
 }
