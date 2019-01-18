@@ -215,7 +215,7 @@ class AboutPage extends Component {
                     </div>
                   </div>
                   <div className="collapse" id="collapseAccordion2" style={{textAlign: "left"}}>
-                    <p>Machine Learning by Stanford University on Coursera.
+                    <p style={{color: "#616161"}}>Machine Learning by Stanford University on Coursera.
                       <a href="https://www.coursera.org/account/accomplishments/certificate/CCCYBDSQ3PJ6"
                          target="_blank" rel="noopener noreferrer" className="stop-propagation"> Certificate
                         earned in July 2016</a>.
