@@ -94,12 +94,12 @@ class AboutPage extends Component {
             <div className="row">
               <div className="col-md-12">
 
-                <p align="justify">Hi, I'm Khang, a sophomore at <b>Olin College of Engineering</b>. I have two
+                <p align="justify">Hi, I'm Khang, a sophomore at <b>Olin College of Engineering</b>. I have three
                   years of experience in software development. In 2016, I worked full-time as a mobile developer for a
-                  Sweden company in Vietnam and led a team to create an
+                  Swedish company in Vietnam and led a team to create an
                   Android app that helps people find suitable airplane tickets and hotel deals. At Olin, I work in the
-                  Robotics Lab where we build robots to play games and interact with humans. Therefore, I have humble
-                  experience in robotics, computer vision and machine learning. I'm planning to major in either
+                  Robotics Lab where we build robots to play games and interact with humans. Therefore, I have
+                  experiences in robotics, computer vision, and machine learning. I'm planning to major in either
                   <b>Electrical and Computer Engineering</b> or <b>Engineering with a concentration in Robotics</b> at
                   Olin.
                 </p>
