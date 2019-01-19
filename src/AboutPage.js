@@ -16,7 +16,6 @@ class AboutPage extends Component {
     const accordionSections = global.$(".collapse-section");
     const accordionIcons = global.$(".accordionIcon");
     for (let i = 0; i < accordionSections.length; i++) {
-      console.log("here");
       accordionSections[i].addEventListener('click', function () {
         accordionIcons[i].getElementsByClassName("plus")[0].classList.toggle("plus-inactive");
         accordionIcons[i].getElementsByClassName("minus")[0].classList.toggle("minus-inactive");
@@ -47,7 +46,7 @@ class AboutPage extends Component {
               <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item active mr-4">
-                    <Link className="nav-link" href="/about" to="about" smooth={true} duration={500}>About
+                    <Link className="nav-link" href="#about" to="about" smooth={true} duration={500}>About
                       <span className="sr-only">(current)</span>
                     </Link>
                   </li>
@@ -72,7 +71,7 @@ class AboutPage extends Component {
                       </h3>
 
                       <Link className="btn my-btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.8s"
-                            data-wow-offset="-500" href="about"
+                            data-wow-offset="-500" href="#about"
                             to="about" smooth={true} duration={500}>About
                         me</Link>
                       <Link2 className="btn btn-outline-indigo btn-lg wow fadeInDown" data-wow-delay="0.8s"

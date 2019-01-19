@@ -14,7 +14,7 @@ const AppRouter = () => (
     <ScrollToTop>
       <div>
         {/* Back to top */}
-        <div id="top"/>
+        <div id="top" style={{position: "absolute", top: 0}}/>
         <Link className="hoverable btn-float" href="" id="floatingBtn" to="top" smooth={true} duration={500}>
           <i className="fa fa-chevron-up btn-icon-float"/>
         </Link>
