@@ -24,7 +24,7 @@
     },
     {
       "title": "The Scaredy Plant",
-      "descriptionHTML": "<p>The Scaredy Plant is an anti-social robot inspired by sensitive plants that displays fear when\n                        interacting with its environment. With 8 actuating leaves on a wheeled flower pot, the Scaredy\n                        Plant can shrink its leaves and run away from frightening stimuli like loud noises and human\n                        shadows.</p>",
+      "descriptionHTML": "<p>The Scaredy Plant is an anti-social robot inspired by sensitive plants that display fear when\n                        interacting with its environment. With 8 actuating leaves on a wheeled flower pot, the Scaredy\n                        Plant can shrink its leaves and run away from frightening stimuli like loud noises and human\n                        shadows.</p>",
       "mediaUrl": "main_scaredyplant.jpg",
       "mediaExternal": false,
       "mediaType": "image",
