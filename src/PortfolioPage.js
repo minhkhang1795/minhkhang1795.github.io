@@ -17,7 +17,17 @@ class PortfolioPage extends Component {
 
   componentDidMount() {
     this.fetchPosts();
+    this.updatePredicate();
+    window.addEventListener("resize", this.updatePredicate);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updatePredicate);
+  }
+
+  updatePredicate = () => {
+    this.setState({controlToggled: window.innerWidth > 1800});
+  };
 
   handleBadgeClicked(code) {
     let categories = this.state.categories;
@@ -116,7 +126,8 @@ class PortfolioPage extends Component {
               </div>
             </div>
 
-            <div className="control-close" style={{width: "10%", height: "100%", right: 0, position: "absolute", cursor: "pointer"}}
+            <div className="control-close"
+                 style={{width: "10%", height: "100%", right: 0, position: "absolute", cursor: "pointer"}}
                  onClick={() => this.toggleControl()}>
               <i style={{top: "45%", position: "absolute"}}
                  className={"fa ml-2 my-indigo-text " + (controlToggled ? "fa-times" : "fa-chevron-right")}
