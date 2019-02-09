@@ -75,8 +75,8 @@ class AboutPage extends Component {
                             to="about" smooth={true} duration={500}>About
                         me</Link>
                       <Link2 className="btn btn-outline-indigo btn-lg wow fadeInDown" data-wow-delay="0.8s"
-                         data-wow-offset="-500"
-                         to="/portfolio/">portfolio</Link2>
+                             data-wow-offset="-500"
+                             to="/portfolio/">portfolio</Link2>
                     </div>
                   </div>
                 </div>
@@ -95,11 +95,12 @@ class AboutPage extends Component {
 
                 <p align="justify">Hi, I'm Khang, a sophomore at <b>Olin College of Engineering</b>. I have three
                   years of experience in software development. In 2016, I worked full-time as a mobile developer for a
-                  Swedish company in Vietnam and led a team to create an
+                  Swedish company in Vietnam and managed a team to create an
                   Android app that helps people find suitable airplane tickets and hotel deals. At Olin, I work in the
                   Robotics Lab where we build robots to play games and interact with humans. Therefore, I have
-                  experiences in robotics, computer vision, and machine learning. I'm planning to major in either
-                  <b>Electrical and Computer Engineering</b> or <b>Engineering with a concentration in Robotics</b> at
+                  significant experience in robotics, computer vision, and machine learning. I'm planning to major in
+                  either <b>Electrical and Computer Engineering</b> or <b>Engineering with a concentration in
+                    Robotics</b> at
                   Olin.
                 </p>
                 <p align="justify">
@@ -143,10 +144,7 @@ class AboutPage extends Component {
                     interested in this field because I can find many applications that can be used in real
                     life. I
                     hope
-                    to gain more experience in Robotics through my work in the Olin's Robolab and through
-                    the
-                    Robotics
-                    Systems Integration course I'm taking at Olin next semester.
+                    to gain more experience in Robotics through my work in the Olin's Robolab.
                   </p>
                 </div>
 
@@ -178,7 +176,8 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>Front-End Web Developer
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>Front-End Web
+                        Developer
                         Certificate</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2018 - Grow with Google Scholarship:
                         Udacity Front-End Web Developer Nanodegree</p>
@@ -252,7 +251,8 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Second Prize
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Second
+                        Prize
                         for Group
                         Project</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2016 - Android for Engineers course</p>
@@ -280,7 +280,8 @@ class AboutPage extends Component {
                      aria-controls="collapseExample">
                   <div className="row">
                     <div className="col-10">
-                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Grand Prize
+                      <h4 className="font-weight-bold my-indigo-text" style={{textAlign: "left"}}>CoderSchool Grand
+                        Prize
                         for Best
                         Group Project</h4>
                       <p className="black-text" style={{textAlign: "left"}}>2015 - iOS (Swift) for Engineers course</p>
