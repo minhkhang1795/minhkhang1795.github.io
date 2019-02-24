@@ -99,9 +99,7 @@ class AboutPage extends Component {
                   Android app that helps people find suitable airplane tickets and hotel deals. At Olin, I work in the
                   Robotics Lab where we build robots to play games and interact with humans. Therefore, I have
                   significant experience in robotics, computer vision, and machine learning. I'm planning to major in
-                  either <b>Electrical and Computer Engineering</b> or <b>Engineering with a concentration in
-                    Robotics</b> at
-                  Olin.
+                  <b>Engineering with a concentration in Computing</b> at Olin.
                 </p>
                 <p align="justify">
                   Check out <Link2 to="/portfolio/">the portfolio tab</Link2> to learn more about my projects.
