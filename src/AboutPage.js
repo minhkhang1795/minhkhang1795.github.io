@@ -497,7 +497,7 @@ class AboutPage extends Component {
                                                             <i className="fa fa-phone fa-1x"/>
                                                         </div>
                                                         <div className="col-10 text-left">
-                                                            (657) 206-0447
+                                                            (339) 213-0444
                                                         </div>
                                                     </div>
 
@@ -508,7 +508,7 @@ class AboutPage extends Component {
                                                         <div className="col-10 text-left">
                                                             <a href="mailto:minhkhang.vu@students.olin.edu?Subject=Hello"
                                                                target="_top" style={{color: "#ffffff"}}>
-                                                                <u>minhkhang.vu@students.olin.edu</u>
+                                                                <u>minhkhang1795@gmail.com</u>
                                                             </a>
                                                         </div>
                                                     </div>
