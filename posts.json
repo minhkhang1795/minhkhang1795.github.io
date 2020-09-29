@@ -1,6 +1,108 @@
 {
   "posts": [
     {
+      "title": "SightIt",
+      "descriptionHTML": "<p>A mobile application for people who are blind or visually impaired to locate common objects in their household..</p>",
+      "mediaUrl": "main_sightit.jpg",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        },
+        {
+          "code": "AI",
+          "color": "orange"
+        }
+      ],
+      "linkUrl": "https://www.youtube.com/watch?v=HVHTrTVJAlo",
+      "linkExternal": true,
+      "btnText": "Read More",
+      "timeRange": "July 2020",
+      "startTime": "07/30/2020"
+    },
+    {
+      "title": "Deep Q-Learning Playing Atari Breakout",
+      "descriptionHTML": "<p>We trained a Deep Q-Learning to play Atari breakout.</p>",
+      "mediaUrl": "main_deep_learning_atari.jpg",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        },
+        {
+          "code": "AI",
+          "color": "orange"
+        }
+      ],
+      "linkUrl": "https://www.youtube.com/watch?v=D5JiOAklPhU&list=PL_kb9ReR32GhomgD-AlxEjenW5nqxxgWt&index=1",
+      "linkExternal": true,
+      "btnText": "Read More",
+      "timeRange": "December 2019",
+      "startTime": "12/12/2019"
+    },
+    {
+      "title": "Video Style Transfer",
+      "descriptionHTML": "<p>Style transfer is the method of applying a style in one image to another image or a video. This project applies the style transfer method described in the paper \"Real-Time Neural Style Transfer for Videos, H. Huang et al.\" to extracting style features from one image to a video, which can be viewed as a sequence of images.</p>",
+      "mediaUrl": "main_video_style_transfer.jpg",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        },
+        {
+          "code": "AI",
+          "color": "orange"
+        }
+      ],
+      "linkUrl": "https://www.youtube.com/watch?v=5KPLARsiuto&list=PL_kb9ReR32GhomgD-AlxEjenW5nqxxgWt&index=2",
+      "linkExternal": true,
+      "btnText": "Read More",
+      "timeRange": "October 2019",
+      "startTime": "10/16/2019"
+    },
+    {
+      "title": "Dongle Library",
+      "descriptionHTML": "<p>An online library for teachers and educators in remote areas to search, categorize and download collections of books. (Microsoft Hackathon 2019)</p>",
+      "mediaUrl": "main_dongle.jpg",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        }
+      ],
+      "linkUrl": "https://donglelibrary.github.io/front-end/",
+      "linkExternal": true,
+      "btnText": "Open App",
+      "timeRange": "August 2019",
+      "startTime": "08/14/2019"
+    },
+    {
+      "title": "The Pirate Shop",
+      "descriptionHTML": "<p>The Pirate Shop for Star Wars fans!</p>",
+      "mediaUrl": "main_pirate.jpg",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        }
+      ],
+      "linkUrl": "https://minhkhang1795.github.io/the-pirate-shop/",
+      "linkExternal": true,
+      "btnText": "Open App",
+      "timeRange": "November 2018",
+      "startTime": "11/13/2018"
+    },
+    {
       "title": "Fake News Predictor",
       "descriptionHTML": "<p>Fake News Predictor is a web application that uses Recurrent Neural Network to identify\n                        unreliable news articles.</p>",
       "mediaUrl": "main_fakenews.jpg",
