@@ -81,7 +81,7 @@ class PortfolioPage extends Component {
           data.posts.sort((a, b) => new Date(a.startTime) < new Date(b.startTime) ? 1 : -1);
           this.setState({posts: data.posts, categories: data.categories});
         }
-      }).catch((e) => {
+      }).catch(() => {
 
       })
     }
@@ -179,8 +179,8 @@ class PortfolioPage extends Component {
               {/* Section heading */}
               <h1 className="h1 font-bold text-center mb-5 pt-4">My Projects</h1>
               {/* Section description */}
-              <p className="text-center mb-5 pb-3">The projects below belong to many different categories
-                including robotics, software, simulation and artificial intelligence.</p>
+              <p className="text-center mb-5 pb-3">My previous experiences involve full-stack development, AR/VR
+                development, and ML/AI & robotics.</p>
 
               {layoutMode !== 'masonry' &&
               posts && posts.constructor === Array && posts.map((post, index) =>
