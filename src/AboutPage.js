@@ -98,7 +98,7 @@ class AboutPage extends Component {
 
                                 <p align="justify">I'm a driven individual who's passionate about engineering projects
                                     that could make a positive impact on the lives of others. My previous experiences
-                                    involve full-stack development, AR/VR development, ML/A & robotics, and tech
+                                    involve full-stack development, AR/VR development, ML/AI & robotics, and tech
                                     consulting.
                                 </p>
                                 <p align="justify">
