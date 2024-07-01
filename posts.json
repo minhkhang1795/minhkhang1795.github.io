@@ -1,6 +1,28 @@
 {
   "posts": [
     {
+      "title": "SnapEat",
+      "descriptionHTML": "<p>Your Perfect Plate, One Snap Away - Your foodie bestie where you can get answers for the two most difficult questions: Where to eat and What to eat</p>",
+      "mediaUrl": "main_snapeat.png",
+      "mediaExternal": false,
+      "mediaType": "image",
+      "categories": [
+        {
+          "code": "software",
+          "color": "green"
+        },
+        {
+          "code": "AI",
+          "color": "orange"
+        }
+      ],
+      "linkUrl": "https://devpost.com/software/hello-mqav0p",
+      "linkExternal": true,
+      "btnText": "Read More",
+      "timeRange": "May 2024",
+      "startTime": "05/02/2024"
+    },
+    {
       "title": "SightIt",
       "descriptionHTML": "<p>A mobile application for people who are blind or visually impaired to locate common objects in their household..</p>",
       "mediaUrl": "main_sightit.jpg",
