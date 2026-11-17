@@ -333,6 +333,15 @@ class AboutPage extends Component {
                                 <hr className="mt-0 pb-4"/>
                             </div>
 
+                            <div className="row">
+                                <div className="col-12">
+                                    <h4 className="font-weight-bold my-indigo-text"
+                                        style={{textAlign: "left"}}>NYC Marathon Finisher 2026</h4>
+                                    <p className="black-text" style={{textAlign: "left"}}>Made it to the Times! Thank you, Nike.</p>
+                                </div>
+                            </div>
+                            <hr className="mt-0 pb-4"/>
+
                         </section>
                         {/* Section: Honors */}
 
@@ -471,7 +480,7 @@ class AboutPage extends Component {
                                     <div className="card hoverable">
                                         <div className="row ml-0" style={{width: "100%"}}>
                                             <div className="col-lg-8 hidden-sm-down px-0">
-                                                <MyMapComponent ll={{lat: 42.2931671, lng: -71.2636653}}/>
+                                                <MyMapComponent ll={{lat: 40.7128, lng: -74.0060}}/>
                                             </div>
 
                                             <div className="col-lg-4"
@@ -487,8 +496,7 @@ class AboutPage extends Component {
                                                             <i className="fa fa-map-marker fa-1x"/>
                                                         </div>
                                                         <div className="col-10 text-left">
-                                                            Olin College of Engineering
-                                                            <br/> 1000 Olin Way, Needham MA
+                                                            New York, NY, USA
                                                         </div>
                                                     </div>
 

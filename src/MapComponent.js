@@ -13,12 +13,12 @@ const MapComponent = compose(
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={15}
+    defaultZoom={11}
     defaultCenter={props.ll}
     defaultOptions={DEFAULT_OPTION}>
     <Marker
       position={props.ll}
-      title={"Olin College"}
+      title={"New York, NY, USA"}
       icon={process.env.PUBLIC_URL + "img/point_address.png"}
     />
   </GoogleMap>
