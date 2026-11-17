@@ -174,6 +174,31 @@ class AboutPage extends Component {
                             </h1>
 
                             <div className="collapse-section" style={{cursor: "pointer"}}>
+                                <div data-toggle="collapse" href="#collapseAccordion5" aria-expanded="false"
+                                     aria-controls="collapseAccordion5">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <h4 className="font-weight-bold my-indigo-text"
+                                                style={{textAlign: "left"}}>NYC Marathon Finisher</h4>
+                                            <p className="black-text" style={{textAlign: "left"}}>2026 — 26.2 miles of
+                                                character development.</p>
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="inactive square mx-auto accordionIcon">
+                                                <span className="plus"><i className="fa fa-plus"/></span>
+                                                <span className="minus minus-inactive"><i
+                                                    className="fa fa-minus"/></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="collapse" id="collapseAccordion5" style={{textAlign: "left"}}>
+                                        <p style={{color: "#616161"}}>Made it to the Times! Thank you, Nike.</p>
+                                    </div>
+                                </div>
+                                <hr className="mt-0"/>
+                            </div>
+
+                            <div className="collapse-section" style={{cursor: "pointer"}}>
                                 <div data-toggle="collapse" href="#collapseAccordion1" aria-expanded="false"
                                      aria-controls="collapseExample">
                                     <div className="row">
@@ -332,15 +357,6 @@ class AboutPage extends Component {
                                 </div>
                                 <hr className="mt-0 pb-4"/>
                             </div>
-
-                            <div className="row">
-                                <div className="col-12">
-                                    <h4 className="font-weight-bold my-indigo-text"
-                                        style={{textAlign: "left"}}>NYC Marathon Finisher 2026</h4>
-                                    <p className="black-text" style={{textAlign: "left"}}>Made it to the Times! Thank you, Nike.</p>
-                                </div>
-                            </div>
-                            <hr className="mt-0 pb-4"/>
 
                         </section>
                         {/* Section: Honors */}
